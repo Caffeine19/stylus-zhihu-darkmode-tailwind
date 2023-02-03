@@ -1,0 +1,343 @@
+/* ==UserStyle==
+@name           www.zhihu.com - 2023/2/2 14:51:50
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document domain("www.zhihu.com") {
+    :root {
+        --tailwind-gray-900: 17, 24, 39;
+        --tailwind-gray-800: 31, 41, 55;
+        --tailwind-gray-700: 55, 65, 81;
+        --tailwind-gray-600: 75, 85, 99;
+        --tailwind-gray-400: 156, 163, 175;
+        --tailwind-gray-300: 209, 213, 219;
+        --tailwind-gray-200: 229, 231, 235;
+        --tailwind-gray-100: 243, 244, 246;
+        --tailwind-gray-50: 249, 250, 251;
+
+        --tailwind-blue-400: 59, 130, 246;
+        --tailwind-blue-300: 147, 197, 253;
+        --tailwind-blue-200: 191, 219, 254;
+    }
+    /*容器背景*/
+    #root {
+        background-color: rgba(var(--tailwind-gray-900));
+    }
+    .App-main {
+        background: rgba(var(--tailwind-gray-900));
+    }
+
+    .css-pgtd2j {
+        color: rgb(var(--tailwind-blue-300));
+    }
+
+    /*顶部的Header*/
+    .AppHeader {
+        background-color: rgba(var(--tailwind-gray-800));
+        border-bottom: 1px solid;
+        border-color: rgba(var(--tailwind-gray-600));
+    }
+
+    /*顶部Header知乎图标*/
+    .AppHeader-inner a svg {
+        fill: rgb(var(--tailwind-blue-300));
+    }
+
+    /*header内部的文字链接*/
+    .AppHeader-TabsLink {
+        color: rgba(var(--tailwind-gray-400));
+    }
+
+    /*header内部的文字链接高亮*/
+    .css-l2ygoj .AppHeader-TabsLink {
+        &.is-active,
+        &:hover {
+            color: rgba(var(--tailwind-gray-50));
+        }
+    }
+
+    /*顶部搜索框*/
+    .Input-wrapper.Input-wrapper--grey {
+        background: rgba(var(--tailwind-gray-600));
+        border-color: rgba(var(--tailwind-gray-600));
+    }
+
+    input.Input {
+        color: rgb(var(--tailwind-gray-50));
+    }
+
+    .css-10fy1q8 {
+        .SearchBar-searchButton {
+            background-color: rgba(var(--tailwind-blue-300));
+            &.hasValue {
+                color: rgb(var(--tailwind-gray-50));
+            }
+            & svg {
+                fill: rgb(var(--tailwind-gray-50));
+            }
+        }
+        .SearchBar-askButton {
+            background-color: rgba(var(--tailwind-blue-300));
+            color: rgb(var(--tailwind-gray-50));
+        }
+    }
+
+    /*次级Header*/
+    .SearchTabs.SearchTab-bottomShadow {
+        background-color: rgba(var(--tailwind-gray-800));
+        border-bottom: 1px solid;
+        border-color: rgba(var(--tailwind-gray-600));
+    }
+
+    /*次级Header内部的链接颜色*/
+    .SearchTabs-actions ul li a {
+        color: rgba(var(--tailwind-gray-100));
+    }
+
+    /*三级搜索Header*/
+    .SearchTabs {
+        background: rgba(var(--tailwind-gray-800));
+    }
+
+    /*三级搜索Header内部文字链接*/
+    .List-item {
+        background: rgba(var(--tailwind-gray-800));
+    }
+
+    .SimpleSearchBar-input {
+        background: rgba(var(--tailwind-gray-600));
+        border-color: rgba(var(--tailwind-gray-600));
+    }
+
+    .css-1mdzk7e .SimpleSearchBar-solidSearchButton {
+        background-color: rgb(var(--tailwind-blue-300));
+    }
+
+    /*搜索回答卡片*/
+    .Card.SearchResult-Card {
+        background: rgba(var(--tailwind-gray-800));
+    }
+
+    .Search-container .ContentItem-actions {
+        background: rgba(var(--tailwind-gray-800));
+    }
+
+    .Search-container .ContentItem-title {
+        color: rgba(var(--tailwind-gray-50));
+    }
+
+    .Search-container .RichText b {
+        color: rgba(var(--tailwind-gray-50));
+    }
+
+    .Search-container .RichContent.is-collapsed .RichContent-inner {
+        color: rgba(var(--tailwind-gray-100));
+    }
+
+    .ContentItem-more {
+        color: rgba(var(--tailwind-blue-300));
+        &:hover {
+            color: rgba(var(--tailwind-blue-300));
+        }
+    }
+
+    /*搜索回答作者名称*/
+    .AuthorInfo-name {
+        color: rgba(var(--tailwind-gray-200));
+    }
+
+    /*搜索回答作者简介*/
+    .AuthorInfo-badgeText {
+        color: rgba(var(--tailwind-gray-400));
+    }
+
+    .Search-container .RichContent .RichContent-inner {
+        color: rgba(var(--tailwind-gray-200));
+    }
+
+    /*搜索回答内图片*/
+    .css-1g0fqss .lazy[data-lazy-status="ok"] {
+        border-radius: 8px;
+    }
+
+    .css-1g0fqss .content_image.zh-lightbox-thumb,
+    .css-1g0fqss .origin_image.zh-lightbox-thumb {
+        border-radius: 8px;
+    }
+
+    /*搜索回答内代码块*/
+    .css-1g0fqss pre {
+        background-color: rgba(var(--tailwind-gray-900));
+    }
+
+    /*搜索回答内小代码*/
+    .css-1g0fqss code {
+        background-color: rgba(var(--tailwind-gray-900));
+        color: #e0e7ff;
+    }
+
+    .css-1g0fqss a.ztext-link:hover,
+    .css-1g0fqss a.internal:hover,
+    .css-1g0fqss a.external:hover {
+        color: rgb(var(--tailwind-blue-300));
+        border-color: rgb(var(--tailwind-blue-300));
+    }
+
+    /*回答点赞按钮*/
+    .LikeButton,
+    .VoteButton {
+        background-color: rgba(var(--tailwind-blue-400), 0.2);
+        color: rgba(var(--tailwind-blue-300));
+    }
+
+    /*回答卡片底部信息*/
+    .ContentItem-action:not(:first-child) {
+        color: rgb(var(--tailwind-gray-400));
+    }
+
+    /*搜索信息标题*/
+    .Highlight em {
+        color: #f43f5e;
+    }
+
+    /*搜索信息标题*/
+    .ContentItem-title a:hover {
+        color: rgb(var(--tailwind-blue-200));
+    }
+
+    /*搜索页侧边乱七八糟信息*/
+    .css-knqde {
+        display: none;
+    }
+
+    /*相关搜索*/
+    .RelevantQuery h2 {
+        color: rgb(var(--tailwind-gray-50));
+    }
+
+    .RelevantQuery li {
+        color: rgb(var(--tailwind-blue-200));
+    }
+
+    /*搜索回答内引用*/
+    .css-1g0fqss blockquote {
+        color: rgb(var(--tailwind-gray-300));
+    }
+
+    .SearchTopicHeader-Introduction,
+    .SearchTopicHeader-Introduction p {
+        color: rgba(var(--tailwind-gray-50));
+    }
+
+    /*搜索页话题链接*/
+    .SearchTopicHeaderLink {
+        color: rgb(var(--tailwind-blue-200));
+    }
+
+    /*搜索页话题信息更多按钮*/
+    .SearchTopicHeader-IntroTail {
+        background: none;
+        color: rgba(var(--tailwind-blue-300));
+    }
+
+    .SearchTopicHeader-IntroTail:before {
+        display: none;
+    }
+
+    /*搜索结果页*/
+    .SearchResult-Card .SearchItem-type {
+        background: rgba(var(--tailwind-gray-600));
+        color: rgb(var(--tailwind-gray-300));
+    }
+
+    /*首页导航栏*/
+    .Topstory-tabs {
+        background-color: rgba(var(--tailwind-gray-800));
+        color: rgba(var(--tailwind-gray-50));
+        border-color: rgba(var(--tailwind-gray-900));
+    }
+
+    .TopstoryTabs-link {
+        color: rgba(var(--tailwind-gray-50));
+        &:hover {
+            color: rgba(var(--tailwind-blue-300));
+        }
+        &.is-active {
+            color: rgba(var(--tailwind-blue-300));
+        }
+    }
+
+    /*关注页卡片*/
+    .Topstory-mainColumnCard .Card:not(.Topstory-tabCard) {
+        background-color: rgba(var(--tailwind-gray-800));
+        border-color: rgba(var(--tailwind-gray-900));
+        border-width: 2px;
+    }
+
+    /*关注页卡片底部菜单栏*/
+    .ContentItem-actions {
+        background-color: rgba(var(--tailwind-gray-800));
+    }
+
+    /*关注页卡片标题*/
+    .ContentItem-title {
+        color: rgb(var(--tailwind-gray-50));
+    }
+
+    /*关注页卡片内容*/
+    .RichContent.is-collapsed .RichContent-inner {
+        color: rgb(var(--tailwind-gray-100));
+    }
+
+    /* .RichContent.is-collapsed .RichContent-inner :hover {
+        color: rgba(var(--tailwind-gray-100), 0.8)
+    } */
+    /*关注页图片*/
+    img.css-1phd9a0 {
+        border-radius: 8px;
+    }
+
+    .RichContent-inner {
+        color: rgb(var(--tailwind-gray-100));
+    }
+
+    @media (min-width: 690px) {
+        .RichContent.is-collapsed .RichContent-inner:hover {
+            color: rgba(var(--tailwind-gray-100), 0.6);
+        }
+    }
+
+    .css-1oy4rvw .Card {
+        background-color: rgba(var(--tailwind-gray-800));
+    }
+    .CreatorEntrance-Link--smallIcon .CreatorEntrancePage-hint--smallIcon {
+        svg.CreatorEntrance-creatorIcon {
+            fill: rgb(var(--tailwind-gray-200));
+            color: rgb(var(--tailwind-gray-200));
+        }
+        .CreatorEntrance-text {
+            .css-zkfaav {
+                color: rgb(var(--tailwind-gray-200));
+            }
+        }
+    }
+
+    .Footer {
+        display: none;
+    }
+    /*回到顶部按钮*/
+    .css-gdd4kf {
+        background: rgba(var(--tailwind-gray-800));
+        &:hover {
+            background: rgb(var(--tailwind-gray-700));
+        }
+        & svg {
+            fill: rgb(var(--tailwind-gray-400));
+        }
+        &:hover svg {
+            fill: rgb(var(--tailwind-gray-50));
+        }
+    }
+}
