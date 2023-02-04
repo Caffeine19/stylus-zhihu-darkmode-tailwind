@@ -21,10 +21,12 @@
         --tailwind-blue-300: 147, 197, 253;
         --tailwind-blue-200: 191, 219, 254;
     }
+
     /*容器背景*/
     #root {
         background-color: rgba(var(--tailwind-gray-900));
     }
+
     .App-main {
         background: rgba(var(--tailwind-gray-900));
     }
@@ -52,6 +54,7 @@
 
     /*header内部的文字链接高亮*/
     .css-l2ygoj .AppHeader-TabsLink {
+
         &.is-active,
         &:hover {
             color: rgba(var(--tailwind-gray-50));
@@ -71,13 +74,16 @@
     .css-10fy1q8 {
         .SearchBar-searchButton {
             background-color: rgba(var(--tailwind-blue-300));
+
             &.hasValue {
                 color: rgb(var(--tailwind-gray-50));
             }
+
             & svg {
                 fill: rgb(var(--tailwind-gray-50));
             }
         }
+
         .SearchBar-askButton {
             background-color: rgba(var(--tailwind-blue-300));
             color: rgb(var(--tailwind-gray-50));
@@ -138,6 +144,7 @@
 
     .ContentItem-more {
         color: rgba(var(--tailwind-blue-300));
+
         &:hover {
             color: rgba(var(--tailwind-blue-300));
         }
@@ -261,9 +268,11 @@
 
     .TopstoryTabs-link {
         color: rgba(var(--tailwind-gray-50));
+
         &:hover {
             color: rgba(var(--tailwind-blue-300));
         }
+
         &.is-active {
             color: rgba(var(--tailwind-blue-300));
         }
@@ -312,11 +321,13 @@
     .css-1oy4rvw .Card {
         background-color: rgba(var(--tailwind-gray-800));
     }
+
     .CreatorEntrance-Link--smallIcon .CreatorEntrancePage-hint--smallIcon {
         svg.CreatorEntrance-creatorIcon {
             fill: rgb(var(--tailwind-gray-200));
             color: rgb(var(--tailwind-gray-200));
         }
+
         .CreatorEntrance-text {
             .css-zkfaav {
                 color: rgb(var(--tailwind-gray-200));
@@ -327,17 +338,87 @@
     .Footer {
         display: none;
     }
+
     /*回到顶部按钮*/
     .css-gdd4kf {
         background: rgba(var(--tailwind-gray-800));
+
         &:hover {
             background: rgb(var(--tailwind-gray-700));
         }
+
         & svg {
             fill: rgb(var(--tailwind-gray-400));
         }
+
         &:hover svg {
             fill: rgb(var(--tailwind-gray-50));
+        }
+    }
+
+    /*用户评论区*/
+    .Comments-container {
+        &.css-plbgu {
+            .css-x0pxoz {
+                border-color: rgb(var(--tailwind-gray-600));
+
+                .css-ip4bff .Dropzone {
+                    color: rgb(var(--tailwind-gray-50));
+                }
+
+                .css-ip4bff .public-DraftEditorPlaceholder-root {
+                    color: rgb(var(--tailwind-gray-300));
+                }
+            }
+
+            .css-z07uxh {
+                border-color: rgb(var(--tailwind-gray-600));
+
+                .css-vpssrj {
+                    color: rgb(var(--tailwind-gray-100));
+                }
+
+                .css-1hnxfhy {
+                    background-color: rgba(var(--tailwind-gray-900));
+                    border-color: rgb(var(--tailwind-gray-900));
+                    color: rgb(var(--tailwind-gray-50));
+
+                    .css-gjiv4z {
+                        background-color: rgba(var(--tailwind-gray-800));
+                        border-color: rgb(var(--tailwind-gray-900));
+                        color: rgb(var(--tailwind-gray-50));
+                    }
+
+                    .css-1v9si9f {
+                        color: rgb(var(--tailwind-gray-200));
+                    }
+                }
+            }
+        }
+
+        .css-1ygdre8 {
+            color: rgba(var(--tailwind-gray-50));
+        }
+
+        .css-1rd0h6f {
+            color: rgba(var(--tailwind-gray-300));
+        }
+
+        .css-we6n55::before {
+            border-color: rgb(var(--tailwind-gray-600));
+        }
+
+        .css-805ti0 {
+            background: rgb(var(--tailwind-gray-800));
+        }
+
+        .css-1yeqy9h::before {
+            border-color: rgb(var(--tailwind-gray-600));
+        }
+
+        button.css-1evwjhc {
+            background: rgb(var(--tailwind-gray-900));
+            color: rgb(var(--tailwind-gray-400));
         }
     }
 }
