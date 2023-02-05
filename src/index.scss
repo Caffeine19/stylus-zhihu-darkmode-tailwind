@@ -424,7 +424,7 @@
   /*单个具体的回答页面*/
   /*头部的回答信息*/
   .QuestionHeader {
-    background: rgb(var(--tailwind-gray-900));
+    background: rgb(var(--tailwind-gray-800));
 
     .QuestionHeader-title {
       color: rgb(var(--tailwind-gray-50));
@@ -470,7 +470,41 @@
       border-color: rgb(var(--tailwind-gray-600));
     }
     span.QuestionFollowStatus-people-tip {
-      color: rgb(var(--tailwind-gray-400));
+      color: rgb(var(--tailwind-gray-300));
     }
+    .QuestionHeader-footer {
+      background-color: rgb(var(--tailwind-gray-800));
+
+      .QuestionButtonGroup {
+        .Button {
+          background-color: rgba(var(--tailwind-blue-300));
+          color: rgb(var(--tailwind-gray-900));
+          border-color: rgb(var(--tailwind-blue-300));
+        }
+        a .Button {
+          background: none;
+          border-color: rgb(var(--tailwind-blue-300));
+          color: rgb(var(--tailwind-blue-300));
+          &:hover {
+            background-color: rgba(var(--tailwind-blue-400), 0.2);
+          }
+        }
+      }
+      .QuestionHeaderActions {
+        .GoodQuestionAction,
+        .QuestionHeader-Comment,
+        .ShareMenu-toggler {
+          .Button {
+            color: rgb(var(--tailwind-gray-400));
+            &:hover {
+              color: rgb(var(--tailwind-gray-400), 0.8);
+            }
+          }
+        }
+      }
+    }
+  }
+  .List-item + .List-item:after {
+    border-color: rgb(var(--tailwind-gray-600));
   }
 }
