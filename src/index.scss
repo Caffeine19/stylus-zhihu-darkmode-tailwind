@@ -421,4 +421,66 @@
             color: rgb(var(--tailwind-gray-400));
         }
     }
+
+    /*单个具体的回答页面*/
+    /*头部的回答信息*/
+    .QuestionHeader {
+        background: rgb(var(--tailwind-gray-900));
+
+        .QuestionHeader-title {
+            color: rgb(var(--tailwind-gray-50));
+        }
+
+        .QuestionHeader-topics {
+            .QuestionTopic {
+
+                /*问题相关标签*/
+                &.css-1s3a4zw {
+                    background: rgba(var(--tailwind-blue-400), 0.2);
+                    color: rgb(var(--tailwind-blue-300));
+                }
+
+            }
+
+
+        }
+
+        /*右侧问题统计信息*/
+        .QuestionFollowStatus-counts {
+            .NumberBoard-item {
+                .NumberBoard-itemName {
+                    color: rgb(var(--tailwind-gray-400));
+
+
+                }
+
+                .NumberBoard-itemValue {
+                    color: rgb(var(--tailwind-gray-100));
+
+                }
+
+                &:hover {
+                    .NumberBoard-itemName {
+                        color: rgb(var(--tailwind-blue-300));
+                    }
+
+                    .NumberBoard-itemValue {
+                        color: rgb(var(--tailwind-blue-300));
+                    }
+                }
+
+
+            }
+
+
+
+
+
+        }
+
+        .NumberBoard--divider .NumberBoard-item+.NumberBoard-item .NumberBoard-itemInner {
+            border-color: rgb(var(--tailwind-gray-600));
+        }
+                span.QuestionFollowStatus-people-tip{color: rgb(var(--tailwind-gray-400));}
+    }
 }
