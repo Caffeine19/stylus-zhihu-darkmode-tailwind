@@ -7,6 +7,8 @@ a dark mode theme based on tailwind for zhihu.com
 
 * 应用于Stylus插件
 * 样式的颜色参考tailwind.css,主题色为gray系列，高亮色为blue系列
+
+   * tailwind的gray系列同知乎的主色调都为冷白色，所以部分来自知乎的样式在本主题下也很适合，比如某些分割线，副标题，次级按钮的颜色，这样子可以省下大量的功夫。
 * 使用sass编译
 
 # 😤动力
