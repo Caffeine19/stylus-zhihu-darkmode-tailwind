@@ -58,6 +58,10 @@
     &:hover {
       color: rgba(var(--tailwind-gray-50));
     }
+
+    &.is-active::after {
+      background-color: rgb(var(--tailwind-blue-300)) !important;
+    }
   }
 
   /*顶部搜索框*/
@@ -67,7 +71,7 @@
   }
 
   input.Input {
-    color: rgb(var(--tailwind-gray-50));
+    color: rgb(var(--tailwind-gray-900));
   }
 
   .css-10fy1q8 {
@@ -75,17 +79,17 @@
       background-color: rgba(var(--tailwind-blue-300));
 
       &.hasValue {
-        color: rgb(var(--tailwind-gray-50));
+        color: rgb(var(--tailwind-gray-900));
       }
 
       & svg {
-        fill: rgb(var(--tailwind-gray-50));
+        fill: rgb(var(--tailwind-gray-900));
       }
     }
 
     .SearchBar-askButton {
       background-color: rgba(var(--tailwind-blue-300));
-      color: rgb(var(--tailwind-gray-50));
+      color: rgb(var(--tailwind-gray-900));
     }
   }
 
@@ -258,7 +262,7 @@
     color: rgb(var(--tailwind-gray-300));
   }
 
-  /*首页导航栏*/
+  /*首页细分导航栏*/
   .Topstory-tabs {
     background-color: rgba(var(--tailwind-gray-800));
     color: rgba(var(--tailwind-gray-50));
@@ -274,6 +278,34 @@
 
     &.is-active {
       color: rgba(var(--tailwind-blue-300));
+    }
+  }
+
+  /*首页向下滚动出现的header*/
+  .TopstoryPageHeader {
+    .TopstoryPageHeader-main {
+      /*知乎图标*/
+      .css-nxq4uo {
+        a svg {
+          fill: rgb(var(--tailwind-blue-300));
+        }
+      }
+    }
+
+    .TopstoryPageHeader-aside {
+      & > .Button {
+        background-color: rgb(var(--tailwind-blue-300));
+        color: rgb(var(--tailwind-gray-900));
+      }
+
+      .QZcfWkCJoarhIYxlM_sG.is-focus {
+        background: rgba(var(--tailwind-gray-600));
+        border-color: rgba(var(--tailwind-gray-600));
+      }
+
+      input {
+        color: rgb(var(--tailwind-gray-50));
+      }
     }
   }
 
@@ -469,9 +501,11 @@
       .NumberBoard-itemInner {
       border-color: rgb(var(--tailwind-gray-600));
     }
+
     span.QuestionFollowStatus-people-tip {
       color: rgb(var(--tailwind-gray-300));
     }
+
     .QuestionHeader-footer {
       background-color: rgb(var(--tailwind-gray-800));
 
@@ -481,21 +515,25 @@
           color: rgb(var(--tailwind-gray-900));
           border-color: rgb(var(--tailwind-blue-300));
         }
+
         a .Button {
           background: none;
           border-color: rgb(var(--tailwind-blue-300));
           color: rgb(var(--tailwind-blue-300));
+
           &:hover {
             background-color: rgba(var(--tailwind-blue-400), 0.2);
           }
         }
       }
+
       .QuestionHeaderActions {
         .GoodQuestionAction,
         .QuestionHeader-Comment,
         .ShareMenu-toggler {
           .Button {
             color: rgb(var(--tailwind-gray-400));
+
             &:hover {
               color: rgb(var(--tailwind-gray-400), 0.8);
             }
@@ -504,6 +542,8 @@
       }
     }
   }
+
+  /*回答于回答之间的分割线*/
   .List-item + .List-item:after {
     border-color: rgb(var(--tailwind-gray-600));
   }
