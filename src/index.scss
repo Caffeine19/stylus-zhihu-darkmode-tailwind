@@ -17,9 +17,9 @@
     --tailwind-gray-100: 243, 244, 246;
     --tailwind-gray-50: 249, 250, 251;
 
-    --tailwind-blue-400: 59, 130, 246;
-    --tailwind-blue-300: 147, 197, 253;
-    --tailwind-blue-200: 191, 219, 254;
+    --tailwind-blue-500: 59, 130, 246;
+    --tailwind-blue-400: 147, 197, 253;
+    --tailwind-blue-300: 191, 219, 254;
   }
 
   /*容器背景*/
@@ -32,7 +32,7 @@
   }
 
   .css-pgtd2j {
-    color: rgb(var(--tailwind-blue-300));
+    color: rgb(var(--tailwind-blue-400));
   }
 
   /*顶部的Header*/
@@ -44,7 +44,7 @@
 
   /*顶部Header知乎图标*/
   .AppHeader-inner a svg {
-    fill: rgb(var(--tailwind-blue-300));
+    fill: rgb(var(--tailwind-blue-400));
   }
 
   /*header内部的文字链接*/
@@ -54,13 +54,14 @@
 
   /*header内部的文字链接高亮*/
   .css-l2ygoj .AppHeader-TabsLink {
+
     &.is-active,
     &:hover {
       color: rgba(var(--tailwind-gray-50));
     }
 
     &.is-active::after {
-      background-color: rgb(var(--tailwind-blue-300)) !important;
+      background-color: rgb(var(--tailwind-blue-400)) !important;
     }
   }
 
@@ -76,20 +77,28 @@
 
   .css-10fy1q8 {
     .SearchBar-searchButton {
-      background-color: rgba(var(--tailwind-blue-300));
+      background-color: rgba(var(--tailwind-blue-400), 0.75);
+
+      &:hover {
+        background-color: rgba(var(--tailwind-blue-400));
+      }
 
       &.hasValue {
-        color: rgb(var(--tailwind-gray-900));
+        color: rgb(var(--tailwind-gray-50));
       }
 
       & svg {
-        fill: rgb(var(--tailwind-gray-900));
+        fill: rgb(var(--tailwind-gray-50));
       }
     }
 
     .SearchBar-askButton {
-      background-color: rgba(var(--tailwind-blue-300));
-      color: rgb(var(--tailwind-gray-900));
+      background-color: rgba(var(--tailwind-blue-400), 0.75);
+      color: rgb(var(--tailwind-gray-50));
+
+      &:hover {
+        background-color: rgba(var(--tailwind-blue-400));
+      }
     }
   }
 
@@ -121,7 +130,7 @@
   }
 
   .css-1mdzk7e .SimpleSearchBar-solidSearchButton {
-    background-color: rgb(var(--tailwind-blue-300));
+    background-color: rgb(var(--tailwind-blue-400));
   }
 
   /*搜索回答卡片*/
@@ -146,10 +155,10 @@
   }
 
   .ContentItem-more {
-    color: rgba(var(--tailwind-blue-300));
+    color: rgba(var(--tailwind-blue-400));
 
     &:hover {
-      color: rgba(var(--tailwind-blue-300));
+      color: rgba(var(--tailwind-blue-400));
     }
   }
 
@@ -191,15 +200,28 @@
   .css-1g0fqss a.ztext-link:hover,
   .css-1g0fqss a.internal:hover,
   .css-1g0fqss a.external:hover {
-    color: rgb(var(--tailwind-blue-300));
-    border-color: rgb(var(--tailwind-blue-300));
+    color: rgb(var(--tailwind-blue-400));
+    border-color: rgb(var(--tailwind-blue-400));
   }
 
   /*回答点赞按钮*/
   .LikeButton,
   .VoteButton {
-    background-color: rgba(var(--tailwind-blue-400), 0.2);
-    color: rgba(var(--tailwind-blue-300));
+    background-color: rgba(var(--tailwind-blue-400), 0.1);
+    color: rgba(var(--tailwind-blue-400));
+
+    &:not(:disabled):hover {
+      background-color: rgba(var(--tailwind-blue-400), 0.2);
+    }
+
+    &.is-active {
+      background-color: rgba(var(--tailwind-blue-400));
+      color: rgba(var(--tailwind-gray-50));
+
+      &:hover {
+        background-color: rgba(var(--tailwind-blue-400));
+      }
+    }
   }
 
   /*回答卡片底部信息*/
@@ -249,7 +271,7 @@
   /*搜索页话题信息更多按钮*/
   .SearchTopicHeader-IntroTail {
     background: none;
-    color: rgba(var(--tailwind-blue-300));
+    color: rgba(var(--tailwind-blue-400));
   }
 
   .SearchTopicHeader-IntroTail:before {
@@ -273,29 +295,30 @@
     color: rgba(var(--tailwind-gray-50));
 
     &:hover {
-      color: rgba(var(--tailwind-blue-300));
+      color: rgba(var(--tailwind-blue-400));
     }
 
     &.is-active {
-      color: rgba(var(--tailwind-blue-300));
+      color: rgba(var(--tailwind-blue-400));
     }
   }
 
   /*首页向下滚动出现的header*/
   .TopstoryPageHeader {
     .TopstoryPageHeader-main {
+
       /*知乎图标*/
       .css-nxq4uo {
         a svg {
-          fill: rgb(var(--tailwind-blue-300));
+          fill: rgb(var(--tailwind-blue-400));
         }
       }
     }
 
     .TopstoryPageHeader-aside {
-      & > .Button {
-        background-color: rgb(var(--tailwind-blue-300));
-        color: rgb(var(--tailwind-gray-900));
+      &>.Button {
+        background-color: rgb(var(--tailwind-blue-400));
+        color: rgb(var(--tailwind-gray-50));
       }
 
       .QZcfWkCJoarhIYxlM_sG.is-focus {
@@ -464,10 +487,11 @@
 
     .QuestionHeader-topics {
       .QuestionTopic {
+
         /*问题相关标签*/
         &.css-1s3a4zw {
           background: rgba(var(--tailwind-blue-400), 0.2);
-          color: rgb(var(--tailwind-blue-300));
+          color: rgb(var(--tailwind-blue-400));
         }
       }
     }
@@ -485,20 +509,17 @@
 
         &:hover {
           .NumberBoard-itemName {
-            color: rgb(var(--tailwind-blue-300));
+            color: rgb(var(--tailwind-blue-400));
           }
 
           .NumberBoard-itemValue {
-            color: rgb(var(--tailwind-blue-300));
+            color: rgb(var(--tailwind-blue-400));
           }
         }
       }
     }
 
-    .NumberBoard--divider
-      .NumberBoard-item
-      + .NumberBoard-item
-      .NumberBoard-itemInner {
+    .NumberBoard--divider .NumberBoard-item+.NumberBoard-item .NumberBoard-itemInner {
       border-color: rgb(var(--tailwind-gray-600));
     }
 
@@ -511,15 +532,15 @@
 
       .QuestionButtonGroup {
         .Button {
-          background-color: rgba(var(--tailwind-blue-300));
+          background-color: rgba(var(--tailwind-blue-400));
           color: rgb(var(--tailwind-gray-900));
-          border-color: rgb(var(--tailwind-blue-300));
+          border-color: rgb(var(--tailwind-blue-400));
         }
 
         a .Button {
           background: none;
-          border-color: rgb(var(--tailwind-blue-300));
-          color: rgb(var(--tailwind-blue-300));
+          border-color: rgb(var(--tailwind-blue-400));
+          color: rgb(var(--tailwind-blue-400));
 
           &:hover {
             background-color: rgba(var(--tailwind-blue-400), 0.2);
@@ -528,6 +549,7 @@
       }
 
       .QuestionHeaderActions {
+
         .GoodQuestionAction,
         .QuestionHeader-Comment,
         .ShareMenu-toggler {
@@ -544,7 +566,7 @@
   }
 
   /*回答于回答之间的分割线*/
-  .List-item + .List-item:after {
+  .List-item+.List-item:after {
     border-color: rgb(var(--tailwind-gray-600));
   }
 }
