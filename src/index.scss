@@ -496,6 +496,11 @@
       }
     }
 
+    /*问题的详细描述*/
+    .RichText.css-1g0fqss {
+      color: rgb(var(--tailwind-gray-200));
+    }
+
     /*右侧问题统计信息*/
     .QuestionFollowStatus-counts {
       .NumberBoard-item {
@@ -568,5 +573,19 @@
   /*回答于回答之间的分割线*/
   .List-item+.List-item:after {
     border-color: rgb(var(--tailwind-gray-600));
+  }
+
+  /*未展开全部回答时的第一个回答卡片*/
+  .QuestionAnswer-content {
+    background-color: rgba(var(--tailwind-gray-800));
+  }
+
+  /*查看全部回答按钮*/
+  .Card {
+    background-color: rgb(var(--tailwind-gray-800));
+
+    a.QuestionMainAction {
+      color: rgb(var(--tailwind-gray-300));
+    }
   }
 }
