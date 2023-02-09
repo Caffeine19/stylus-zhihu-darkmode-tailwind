@@ -103,8 +103,6 @@
     }
   }
 
-
-
   .AppHeader-userInfo {
     svg {
       fill: rgb(var(--tailwind-gray-200));
@@ -127,7 +125,7 @@
     color: rgba(var(--tailwind-gray-100));
 
     &.is-active:after {
-      background-color: rgb(var(--tailwind-blue-400))
+      background-color: rgb(var(--tailwind-blue-400));
     }
   }
 
@@ -263,7 +261,6 @@
     .LinkCard-title {
       color: rgb(var(--tailwind-gray-50));
     }
-
   }
 
   /*搜索信息标题*/
@@ -341,10 +338,8 @@
 
         .KfeCollection-PcCollegeCard-description,
         .KfeCollection-PcCollegeCard-moreDescription {
-          color: rgb(var(--tailwind-gray-100))
+          color: rgb(var(--tailwind-gray-100));
         }
-
-
       }
 
       .KfeCollection-PcCollegeCard-searchMore {
@@ -352,7 +347,6 @@
       }
     }
   }
-
 
   /*首页细分导航栏*/
   .Topstory-tabs {
