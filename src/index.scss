@@ -54,7 +54,6 @@
 
   /*header内部的文字链接高亮*/
   .css-l2ygoj .AppHeader-TabsLink {
-
     &.is-active,
     &:hover {
       color: rgba(var(--tailwind-gray-50));
@@ -229,22 +228,29 @@
     border-color: rgb(var(--tailwind-blue-400));
   }
 
-  /*回答点赞按钮*/
-  .LikeButton,
-  .VoteButton {
-    background-color: rgba(var(--tailwind-blue-400), 0.1);
-    color: rgba(var(--tailwind-blue-400));
+  /*他人关注问题卡片内关注问题按钮*/
+  .TopstoryItem
+    .ContentItem-actions
+    .Button:not(.Button--plain):not(.Button--link) {
+    color: rgb(var(--tailwind-blue-400));
+    border-color: rgb(var(--tailwind-blue-400));
+    /*回答点赞按钮*/
+    &.LikeButton,
+    &.VoteButton {
+      background-color: rgba(var(--tailwind-blue-400), 0.1);
+      color: rgba(var(--tailwind-blue-400));
+      border-color: transparent;
+      &:not(:disabled):hover {
+        background-color: rgba(var(--tailwind-blue-400), 0.2);
+      }
 
-    &:not(:disabled):hover {
-      background-color: rgba(var(--tailwind-blue-400), 0.2);
-    }
-
-    &.is-active {
-      background-color: rgba(var(--tailwind-blue-400));
-      color: rgba(var(--tailwind-gray-50)) !important;
-
-      &:hover {
+      &.is-active {
         background-color: rgba(var(--tailwind-blue-400));
+        color: rgba(var(--tailwind-gray-50));
+
+        &:hover {
+          background-color: rgba(var(--tailwind-blue-400));
+        }
       }
     }
   }
@@ -335,7 +341,6 @@
       }
 
       .KfeCollection-PcCollegeCard-meta {
-
         .KfeCollection-PcCollegeCard-description,
         .KfeCollection-PcCollegeCard-moreDescription {
           color: rgb(var(--tailwind-gray-100));
@@ -370,7 +375,6 @@
   /*首页向下滚动出现的header*/
   .TopstoryPageHeader {
     .TopstoryPageHeader-main {
-
       /*知乎图标*/
       .css-nxq4uo {
         a svg {
@@ -380,7 +384,7 @@
     }
 
     .TopstoryPageHeader-aside {
-      &>.Button {
+      & > .Button {
         background-color: rgb(var(--tailwind-blue-400));
         color: rgb(var(--tailwind-gray-50));
       }
@@ -424,13 +428,6 @@
   /*关注页图片*/
   img.css-1phd9a0 {
     border-radius: 8px;
-  }
-
-
-  /*他人关注问题卡片内关注问题按钮*/
-  .TopstoryItem .ContentItem-actions .Button:not(.Button--plain):not(.Button--link) {
-    color: rgb(var(--tailwind-blue-400));
-    border-color: rgb(var(--tailwind-blue-400));
   }
 
   .RichContent-inner {
@@ -558,7 +555,6 @@
 
     .QuestionHeader-topics {
       .QuestionTopic {
-
         /*问题相关标签*/
         &.css-1s3a4zw {
           background: rgba(var(--tailwind-blue-400), 0.2);
@@ -595,7 +591,10 @@
       }
     }
 
-    .NumberBoard--divider .NumberBoard-item+.NumberBoard-item .NumberBoard-itemInner {
+    .NumberBoard--divider
+      .NumberBoard-item
+      + .NumberBoard-item
+      .NumberBoard-itemInner {
       border-color: rgb(var(--tailwind-gray-600));
     }
 
@@ -625,7 +624,6 @@
       }
 
       .QuestionHeaderActions {
-
         .GoodQuestionAction,
         .QuestionHeader-Comment,
         .ShareMenu-toggler {
@@ -642,7 +640,7 @@
   }
 
   /*回答于回答之间的分割线*/
-  .List-item+.List-item:after {
+  .List-item + .List-item:after {
     border-color: rgb(var(--tailwind-gray-600));
   }
 
