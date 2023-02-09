@@ -69,12 +69,13 @@
   .Input-wrapper.Input-wrapper--grey {
     background: rgba(var(--tailwind-gray-600));
     border-color: rgba(var(--tailwind-gray-600));
+
+    input.Input {
+      color: rgb(var(--tailwind-gray-50));
+    }
   }
 
-  input.Input {
-    color: rgb(var(--tailwind-gray-900));
-  }
-
+  /*搜索框按钮和提问按钮*/
   .css-10fy1q8 {
     .SearchBar-searchButton {
       background-color: rgba(var(--tailwind-blue-400), 0.75);
@@ -99,6 +100,18 @@
       &:hover {
         background-color: rgba(var(--tailwind-blue-400));
       }
+    }
+  }
+
+
+
+  .AppHeader-userInfo {
+    svg {
+      fill: rgb(var(--tailwind-gray-200));
+    }
+
+    a svg {
+      fill: rgb(var(--tailwind-gray-200));
     }
   }
 
