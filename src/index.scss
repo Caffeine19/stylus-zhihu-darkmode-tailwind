@@ -426,6 +426,13 @@
     border-radius: 8px;
   }
 
+
+  /*他人关注问题卡片内关注问题按钮*/
+  .TopstoryItem .ContentItem-actions .Button:not(.Button--plain):not(.Button--link) {
+    color: rgb(var(--tailwind-blue-400));
+    border-color: rgb(var(--tailwind-blue-400));
+  }
+
   .RichContent-inner {
     color: rgb(var(--tailwind-gray-100));
   }
