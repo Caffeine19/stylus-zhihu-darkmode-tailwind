@@ -24,6 +24,7 @@
 
   /*容器背景*/
   #root {
+    height: 100vh;
     background-color: rgba(var(--tailwind-gray-900));
   }
 
@@ -228,29 +229,21 @@
     border-color: rgb(var(--tailwind-blue-400));
   }
 
-  /*他人关注问题卡片内关注问题按钮*/
-  .TopstoryItem
-    .ContentItem-actions
-    .Button:not(.Button--plain):not(.Button--link) {
-    color: rgb(var(--tailwind-blue-400));
-    border-color: rgb(var(--tailwind-blue-400));
-    /*回答点赞按钮*/
-    &.LikeButton,
-    &.VoteButton {
-      background-color: rgba(var(--tailwind-blue-400), 0.1);
-      color: rgba(var(--tailwind-blue-400));
-      border-color: transparent;
-      &:not(:disabled):hover {
-        background-color: rgba(var(--tailwind-blue-400), 0.2);
-      }
+  .LikeButton,
+  .VoteButton {
+    background-color: rgba(var(--tailwind-blue-400), 0.1);
+    color: rgba(var(--tailwind-blue-400));
+    border-color: transparent;
+    &:not(:disabled):hover {
+      background-color: rgba(var(--tailwind-blue-400), 0.2);
+    }
 
-      &.is-active {
+    &.is-active {
+      background-color: rgba(var(--tailwind-blue-400));
+      color: rgba(var(--tailwind-gray-50));
+
+      &:hover {
         background-color: rgba(var(--tailwind-blue-400));
-        color: rgba(var(--tailwind-gray-50));
-
-        &:hover {
-          background-color: rgba(var(--tailwind-blue-400));
-        }
       }
     }
   }
@@ -276,7 +269,7 @@
 
   /*搜索信息标题*/
   .ContentItem-title a:hover {
-    color: rgb(var(--tailwind-blue-200));
+    color: rgb(var(--tailwind-blue-400));
   }
 
   /*搜索页侧边乱七八糟信息*/
@@ -290,7 +283,7 @@
   }
 
   .RelevantQuery li {
-    color: rgb(var(--tailwind-blue-200));
+    color: rgb(var(--tailwind-blue-400));
   }
 
   /*搜索回答内引用*/
@@ -305,7 +298,7 @@
 
   /*搜索页话题链接*/
   .SearchTopicHeaderLink {
-    color: rgb(var(--tailwind-blue-200));
+    color: rgb(var(--tailwind-blue-400));
   }
 
   /*搜索页话题信息更多按钮*/
@@ -428,6 +421,33 @@
   /*关注页图片*/
   img.css-1phd9a0 {
     border-radius: 8px;
+  }
+
+  /*他人关注问题卡片内关注问题按钮*/
+  .TopstoryItem
+    .ContentItem-actions
+    .Button:not(.Button--plain):not(.Button--link) {
+    color: rgb(var(--tailwind-blue-400));
+    border-color: rgb(var(--tailwind-blue-400));
+    /*回答点赞按钮*/
+    &.LikeButton,
+    &.VoteButton {
+      background-color: rgba(var(--tailwind-blue-400), 0.1);
+      color: rgba(var(--tailwind-blue-400));
+      border-color: transparent;
+      &:not(:disabled):hover {
+        background-color: rgba(var(--tailwind-blue-400), 0.2);
+      }
+
+      &.is-active {
+        background-color: rgba(var(--tailwind-blue-400));
+        color: rgba(var(--tailwind-gray-50));
+
+        &:hover {
+          background-color: rgba(var(--tailwind-blue-400));
+        }
+      }
+    }
   }
 
   .RichContent-inner {
