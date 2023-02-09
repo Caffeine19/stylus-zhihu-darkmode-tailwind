@@ -4,6 +4,8 @@ a dark mode theme based on tailwind for zhihu.com
 
 一份基于 tailwind.css 的用于**知乎**的神色模式主题，请配合 stylus chrome 插件食用。
 
+<div style="text-align:center;padding:4px"><img src="./assets/overview-1.png" style="width:80%;border-radius:6px;max-width:1000px"/></div>
+
 # 🎉 简介
 
 - 应用于 Stylus 插件
