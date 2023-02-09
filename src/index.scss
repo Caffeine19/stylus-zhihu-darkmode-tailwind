@@ -137,9 +137,19 @@
     background: rgba(var(--tailwind-gray-800));
   }
 
+  /*三级Header搜索框*/
   .SimpleSearchBar-input {
     background: rgba(var(--tailwind-gray-600));
     border-color: rgba(var(--tailwind-gray-600));
+
+    &.is-focus {
+      background-color: rgb(var(--tailwind-gray-800));
+      border-color: rgba(var(--tailwind-gray-600));
+    }
+
+    input {
+      color: rgb(var(--tailwind-gray-50));
+    }
   }
 
   .css-1mdzk7e .SimpleSearchBar-solidSearchButton {
