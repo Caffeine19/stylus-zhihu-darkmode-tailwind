@@ -67,8 +67,8 @@
 
   /*顶部搜索框*/
   .Input-wrapper.Input-wrapper--grey {
-    background: rgba(var(--tailwind-gray-600));
-    border-color: rgba(var(--tailwind-gray-600));
+    background: rgba(var(--tailwind-gray-900));
+    border-color: rgba(var(--tailwind-gray-900));
 
     input.Input {
       color: rgb(var(--tailwind-gray-50));
@@ -139,12 +139,12 @@
 
   /*三级Header搜索框*/
   .SimpleSearchBar-input {
-    background: rgba(var(--tailwind-gray-600));
-    border-color: rgba(var(--tailwind-gray-600));
+    background: rgba(var(--tailwind-gray-900));
+    border-color: rgba(var(--tailwind-gray-900));
 
     &.is-focus {
       background-color: rgb(var(--tailwind-gray-800));
-      border-color: rgba(var(--tailwind-gray-600));
+      border-color: rgba(var(--tailwind-gray-800));
     }
 
     input {
@@ -250,6 +250,16 @@
   /*回答卡片底部信息*/
   .ContentItem-action:not(:first-child) {
     color: rgb(var(--tailwind-gray-400));
+  }
+
+  /*回答内其他回答链接*/
+  .css-1g0fqss .LinkCard.new {
+    background-color: rgb(var(--tailwind-gray-900));
+
+    .LinkCard-title {
+      color: rgb(var(--tailwind-gray-50));
+    }
+
   }
 
   /*搜索信息标题*/
