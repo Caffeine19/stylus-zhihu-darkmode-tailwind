@@ -40,7 +40,10 @@
   .AppHeader {
     background-color: rgba(var(--tailwind-gray-800));
     border-bottom: 1px solid;
-    border-color: rgba(var(--tailwind-gray-600));
+    border-color: rgba(var(--tailwind-gray-700));
+    box-shadow: 0 100px 80px #00000012, 0 41.7776px 33.4221px #0000000d,
+      0 22.3363px 17.869px #0000000b, 0 12.5216px 10.0172px #00000009,
+      0 6.6501px 5.32008px #00000007, 0 2.76726px 2.21381px #00000005;
   }
 
   /*顶部Header知乎图标*/
@@ -117,7 +120,10 @@
   .SearchTabs.SearchTab-bottomShadow {
     background-color: rgba(var(--tailwind-gray-800));
     border-bottom: 1px solid;
-    border-color: rgba(var(--tailwind-gray-600));
+    border-color: rgba(var(--tailwind-gray-700));
+    box-shadow: 0 100px 80px #00000012, 0 41.7776px 33.4221px #0000000d,
+      0 22.3363px 17.869px #0000000b, 0 12.5216px 10.0172px #00000009,
+      0 6.6501px 5.32008px #00000007, 0 2.76726px 2.21381px #00000005;
   }
 
   /*次级Header内部的链接颜色*/
