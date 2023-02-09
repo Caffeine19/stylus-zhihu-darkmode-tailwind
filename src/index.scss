@@ -307,6 +307,39 @@
     color: rgb(var(--tailwind-gray-300));
   }
 
+  /*搜索相关电子书*/
+  .KfeCollection-PcCollegeCard-wrapper {
+    background-color: rgb(var(--tailwind-gray-800));
+
+    .KfeCollection-PcCollegeCard-root {
+      background-color: rgb(var(--tailwind-gray-800));
+
+      .KfeCollection-PcCollegeCard em {
+        color: #f43f5e;
+      }
+
+      span.KfeCollection-PcCollegeCard-type {
+        background-color: rgb(var(--tailwind-gray-700));
+        color: rgb(var(--tailwind-gray-300));
+      }
+
+      .KfeCollection-PcCollegeCard-meta {
+
+        .KfeCollection-PcCollegeCard-description,
+        .KfeCollection-PcCollegeCard-moreDescription {
+          color: rgb(var(--tailwind-gray-100))
+        }
+
+
+      }
+
+      .KfeCollection-PcCollegeCard-searchMore {
+        color: rgba(var(--tailwind-blue-400));
+      }
+    }
+  }
+
+
   /*首页细分导航栏*/
   .Topstory-tabs {
     background-color: rgba(var(--tailwind-gray-800));
