@@ -125,6 +125,10 @@
   /*次级Header内部的链接颜色*/
   .SearchTabs-actions ul li a {
     color: rgba(var(--tailwind-gray-100));
+
+    &.is-active:after {
+      background-color: rgb(var(--tailwind-blue-400))
+    }
   }
 
   /*三级搜索Header*/
