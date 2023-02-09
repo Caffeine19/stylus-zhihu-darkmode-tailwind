@@ -241,7 +241,7 @@
 
     &.is-active {
       background-color: rgba(var(--tailwind-blue-400));
-      color: rgba(var(--tailwind-gray-50));
+      color: rgba(var(--tailwind-gray-50)) !important;
 
       &:hover {
         background-color: rgba(var(--tailwind-blue-400));
