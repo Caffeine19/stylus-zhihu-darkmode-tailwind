@@ -593,7 +593,13 @@
     .RichText.css-1g0fqss {
       color: rgb(var(--tailwind-gray-200));
     }
-
+    /*问题折叠时的详细描述*/
+    .QuestionRichText--expandable.QuestionRichText--collapsed {
+      color: rgb(var(--tailwind-gray-200));
+      &:hover {
+        color: rgb(var(--tailwind-gray-400));
+      }
+    }
     /*右侧问题统计信息*/
     .QuestionFollowStatus-counts {
       .NumberBoard-item {
