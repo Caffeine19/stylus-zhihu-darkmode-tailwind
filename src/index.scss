@@ -670,6 +670,25 @@
       }
     }
   }
+  /*单个回答页向下滚动时出现的header*/
+  .PageHeader {
+    .QuestionHeader-title {
+      color: rgb(var(--tailwind-gray-50));
+    }
+    /*关注问题按钮*/
+    .epMJl0lFQuYbC7jrwr_o.JmYzaky7MEPMFcJDLNMG {
+      background-color: rgb(var(--tailwind-blue-400));
+      color: rgb(var(--tailwind-gray-50));
+      &:hover {
+        border: rgba(var(--tailwind-blue-300));
+      }
+    }
+    /*写回答按钮*/
+    .JmYzaky7MEPMFcJDLNMG {
+      border-color: rgb(var(--tailwind-blue-400));
+      color: rgb(var(--tailwind-blue-400));
+    }
+  }
 
   /*回答于回答之间的分割线*/
   .List-item + .List-item:after {
@@ -688,5 +707,9 @@
     a.QuestionMainAction {
       color: rgb(var(--tailwind-gray-300));
     }
+  }
+  /*回答列表底部写回答按钮*/
+  .QuestionAnswers-answerButton {
+    color: rgb(var(--tailwind-blue-400));
   }
 }
