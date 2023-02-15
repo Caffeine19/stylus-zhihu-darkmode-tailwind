@@ -526,6 +526,7 @@
           color: rgb(var(--tailwind-gray-100));
         }
 
+        /*评论排序 默认与最新按钮*/
         .css-1hnxfhy {
           background-color: rgba(var(--tailwind-gray-900));
           border-color: rgb(var(--tailwind-gray-900));
@@ -555,9 +556,10 @@
     .css-we6n55::before {
       border-color: rgb(var(--tailwind-gray-600));
     }
-
+    /*底部添加用户评论块*/
     .css-805ti0 {
       background: rgb(var(--tailwind-gray-800));
+      box-shadow: rgba(var(--tailwind-gray-900), 0.6) 0px -2px 6px !important;
     }
 
     .css-1yeqy9h::before {
