@@ -1,0 +1,41 @@
+//收藏导航header
+.CollectionsHeader-mainContent {
+  border-color: $tailwind-gray-700;
+  //我创建的收藏夹&关注的收藏夹
+  .CollectionsHeader-tabsLink {
+    color: $tailwind-gray-50;
+    &:hover {
+      color: $highlight;
+    }
+    &.is-active::after {
+      background-color: $highlight;
+    }
+  }
+  //新建收藏夹按钮
+  .yXNqP8Bkgas9d_XumHbv {
+    color: $highlight;
+    svg {
+      fill: $highlight;
+    }
+    &:hover {
+      color: $highlight-0-8;
+      svg {
+        fill: $highlight-0-8;
+      }
+    }
+  }
+}
+//每个收藏夹之间的分割线
+.SelfCollectionItem + .SelfCollectionItem {
+  border-color: $tailwind-gray-700;
+}
+//收藏夹卡片
+.SelfCollectionItem-innerContainer {
+  //收藏夹名称
+  .SelfCollectionItem-title {
+    color: $tailwind-gray-50;
+  }
+  .SelfCollectionItem-actions {
+    color: $tailwind-gray-300;
+  }
+}
