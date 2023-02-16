@@ -710,8 +710,30 @@
       color: rgb(var(--tailwind-gray-300));
     }
   }
+  /*展开阅读全文按钮*/
+  .RichContent--unescapable.is-collapsed .ContentItem-rightButton {
+    color: rgba(var(--tailwind-blue-300));
+  }
+  /*回答部分页更多回答*/
+  .MoreAnswers .List-header {
+    &::after {
+      border-color: rgb(var(--tailwind-gray-600));
+    }
+    .List-headerText {
+      background-color: rgb(var(--tailwind-gray-800));
+      color: rgb(var(--tailwind-gray-600));
+    }
+  }
   /*回答列表底部写回答按钮*/
   .QuestionAnswers-answerButton {
     color: rgb(var(--tailwind-blue-400));
+  }
+  /*回答卡片内关注按钮*/
+  .E211w_M7Hzs0GMB7BEyA.JmYzaky7MEPMFcJDLNMG {
+    background-color: rgba(var(--tailwind-blue-400), 0.1);
+    color: rgb(var(--tailwind-blue-400));
+    &:hover {
+      background-color: rgba(var(--tailwind-blue-400), 0.2);
+    }
   }
 }
