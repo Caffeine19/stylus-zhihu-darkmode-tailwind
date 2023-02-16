@@ -1,0 +1,74 @@
+/*顶部用户资料卡片*/
+.Card {
+  background-color: $tailwind-gray-800;
+
+  .UserCover {
+    /*用户背景图*/
+    img {
+      border-radius: 0px;
+    }
+  }
+  .ProfileHeader-wrapper {
+    background-color: $tailwind-gray-800;
+    /*用户头像*/
+    .UserAvatar {
+      border-color: $tailwind-gray-800;
+    }
+    /*用户名*/
+    .ProfileHeader-name {
+      color: $tailwind-gray-50;
+    }
+    //查看详细资料按钮
+    .ProfileHeader-expandButton {
+      color: $tailwind-gray-400;
+    }
+    //用户详情
+    .ProfileHeader-detail {
+      color: $tailwind-gray-200;
+    }
+    //编辑信息按钮
+    .JmYzaky7MEPMFcJDLNMG {
+      color: $highlight;
+      border-color: $highlight;
+
+      &:hover {
+        background-color: $highlight-0-1;
+      }
+    }
+    //用户简介
+    .ProfileHeader-headline {
+      color: $tailwind-gray-200;
+    }
+    //用户信息
+    .ProfileHeader-infoItem {
+      color: $tailwind-gray-200;
+    }
+    .epMJl0lFQuYbC7jrwr_o.JmYzaky7MEPMFcJDLNMG {
+      background-color: $highlight;
+      color: $tailwind-gray-50;
+      &:hover {
+        background-color: $highlight-0-8;
+      }
+    }
+  }
+}
+//主内容区
+.Profile-main {
+  //导航标签栏
+  .ProfileMain-tabs {
+    border-color: $tailwind-gray-600;
+    //导航标签
+    .Tabs-item {
+      .Tabs-link {
+        color: $tailwind-gray-50;
+        &.is-active:after {
+          background-color: $highlight;
+        }
+      }
+      .Tabs-meta {
+        color: $tailwind-gray-400;
+      }
+    }
+  }
+  @import "peopleCollection";
+}
