@@ -736,4 +736,27 @@
       background-color: rgba(var(--tailwind-blue-400), 0.2);
     }
   }
+  /*展开全部回答页header*/
+  .List-header {
+    border-color: rgb(var(--tailwind-gray-600));
+    .List-headerText {
+      color: rgb(var(--tailwind-gray-200));
+    }
+    .List-headerOptions {
+      /*排序按钮*/
+      .h39gnJsHf0NWeCTuygxV {
+        background-color: rgb(var(--tailwind-gray-600));
+        color: rgb(var(--tailwind-gray-200));
+        padding: 4px;
+        &:hover {
+          background-color: rgba(var(--tailwind-gray-600), 0.6);
+        }
+      }
+    }
+  }
+  /*被折叠回答统计*/
+  .CollapsedAnswers-bar {
+    border-color: rgb(var(--tailwind-gray-700));
+    color: rgb(var(--tailwind-gray-300));
+  }
 }
