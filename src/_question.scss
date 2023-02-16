@@ -1,0 +1,188 @@
+
+      /*单个具体的回答页面*/
+  /*头部的回答信息*/
+  .QuestionHeader {
+    background: $tailwind-gray-800;
+
+    .QuestionHeader-title {
+      color: $tailwind-gray-50;
+    }
+
+    .QuestionHeader-topics {
+      .QuestionTopic {
+        /*问题相关标签*/
+        &.css-1s3a4zw {
+          background: $highlight-0-2;
+          color: $tailwind-blue-400;
+        }
+      }
+    }
+
+    /*问题的详细描述*/
+    .RichText.css-1g0fqss {
+      color: $tailwind-gray-200;
+    }
+    /*问题折叠时的详细描述*/
+    .QuestionRichText--expandable.QuestionRichText--collapsed {
+      color: $tailwind-gray-200;
+      &:hover {
+        color: $tailwind-gray-400;
+      }
+    }
+    /*右侧问题统计信息*/
+    .QuestionFollowStatus-counts {
+      .NumberBoard-item {
+        .NumberBoard-itemName {
+          color: $tailwind-gray-400;
+        }
+
+        .NumberBoard-itemValue {
+          color: $tailwind-gray-100;
+        }
+
+        &:hover {
+          .NumberBoard-itemName {
+            color: $tailwind-blue-400;
+          }
+
+          .NumberBoard-itemValue {
+            color: $tailwind-blue-400;
+          }
+        }
+      }
+    }
+
+    .NumberBoard--divider
+      .NumberBoard-item
+      + .NumberBoard-item
+      .NumberBoard-itemInner {
+      border-color: $tailwind-gray-600;
+    }
+
+    span.QuestionFollowStatus-people-tip {
+      color: $tailwind-gray-300;
+    }
+
+    .QuestionHeader-footer {
+      background-color: $tailwind-gray-800;
+
+      .QuestionButtonGroup {
+        .Button {
+          background-color: $highlight;
+          color: $tailwind-gray-900;
+          border-color: $tailwind-blue-400;
+        }
+
+        a .Button {
+          background: none;
+          border-color: $tailwind-blue-400;
+          color: $tailwind-blue-400;
+
+          &:hover {
+            background-color: $highlight-0-2;
+          }
+        }
+      }
+
+      .QuestionHeaderActions {
+        .GoodQuestionAction,
+        .QuestionHeader-Comment,
+        .ShareMenu-toggler {
+          .Button {
+            color: $tailwind-gray-400;
+
+            &:hover {
+              color: $tailwind-gray-400;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*单个回答页向下滚动时出现的header*/
+  .PageHeader {
+    .QuestionHeader-title {
+      color: $tailwind-gray-50;
+    }
+    /*关注问题按钮*/
+    .epMJl0lFQuYbC7jrwr_o.JmYzaky7MEPMFcJDLNMG {
+      background-color: $tailwind-blue-400;
+      color: $tailwind-gray-50;
+      &:hover {
+        border: $tailwind-blue-300;
+      }
+    }
+    /*写回答按钮*/
+    .JmYzaky7MEPMFcJDLNMG {
+      border-color: $tailwind-blue-400;
+      color: $tailwind-blue-400;
+    }
+  }
+
+  /*回答于回答之间的分割线*/
+  .List-item + .List-item:after {
+    border-color: $tailwind-gray-600;
+  }
+
+  /*未展开全部回答时的第一个回答卡片*/
+  .QuestionAnswer-content {
+    background-color: $tailwind-gray-800;
+  }
+
+  /*查看全部回答按钮*/
+  .Card {
+    background-color: $tailwind-gray-800;
+
+    a.QuestionMainAction {
+      color: $tailwind-gray-300;
+    }
+  }
+  /*展开阅读全文按钮*/
+  .RichContent--unescapable.is-collapsed .ContentItem-rightButton {
+    color: $tailwind-blue-300;
+  }
+  /*回答部分页更多回答*/
+  .MoreAnswers .List-header {
+    &::after {
+      border-color: $tailwind-gray-600;
+    }
+    .List-headerText {
+      background-color: $tailwind-gray-800;
+      color: $tailwind-gray-600;
+    }
+  }
+  /*回答列表底部写回答按钮*/
+  .QuestionAnswers-answerButton {
+    color: $tailwind-blue-400;
+  }
+  /*回答卡片内关注按钮*/
+  .E211w_M7Hzs0GMB7BEyA.JmYzaky7MEPMFcJDLNMG {
+    background-color: $highlight-0-1;
+    color: $tailwind-blue-400;
+    &:hover {
+      background-color: $highlight-0-2;
+    }
+  }
+  /*展开全部回答页header*/
+  .List-header {
+    border-color: $tailwind-gray-600;
+    .List-headerText {
+      color: $tailwind-gray-200;
+    }
+    .List-headerOptions {
+      /*排序按钮*/
+      .h39gnJsHf0NWeCTuygxV {
+        background-color: $tailwind-gray-600;
+        color: $tailwind-gray-200;
+        padding: 4px;
+        &:hover {
+          background-color: rgba($tailwind-gray-600, 0.6);
+        }
+      }
+    }
+  }
+  /*被折叠回答统计*/
+  .CollapsedAnswers-bar {
+    border-color: $tailwind-gray-700;
+    color: $tailwind-gray-300;
+  }

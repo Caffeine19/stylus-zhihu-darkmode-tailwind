@@ -1,0 +1,187 @@
+/*搜索回答卡片*/
+.Card.SearchResult-Card {
+  background: $tailwind-gray-800;
+}
+
+.Search-container .ContentItem-actions {
+  background: $tailwind-gray-800;
+}
+
+.Search-container .ContentItem-title {
+  color: $tailwind-gray-50;
+}
+
+.Search-container .RichText b {
+  color: $tailwind-gray-50;
+}
+
+.Search-container .RichContent.is-collapsed .RichContent-inner {
+  color: $tailwind-gray-100;
+}
+
+.ContentItem-more {
+  color: $highlight;
+
+  &:hover {
+    color: $highlight;
+  }
+}
+
+/*搜索回答作者名称*/
+.AuthorInfo-name {
+  color: $tailwind-gray-200;
+}
+
+/*搜索回答作者简介*/
+.AuthorInfo-badgeText {
+  color: $tailwind-gray-400;
+}
+
+.Search-container .RichContent .RichContent-inner {
+  color: $tailwind-gray-200;
+}
+
+/*搜索回答内图片*/
+.css-1g0fqss .lazy[data-lazy-status="ok"] {
+  border-radius: 8px;
+}
+
+.css-1g0fqss .content_image.zh-lightbox-thumb,
+.css-1g0fqss .origin_image.zh-lightbox-thumb {
+  border-radius: 8px;
+}
+
+/*搜索回答内代码块*/
+.css-1g0fqss pre {
+  background-color: $tailwind-gray-900;
+}
+
+/*搜索回答内小代码*/
+.css-1g0fqss code {
+  background-color: $tailwind-gray-900;
+  color: #e0e7ff;
+}
+
+.css-1g0fqss a.ztext-link:hover,
+.css-1g0fqss a.internal:hover,
+.css-1g0fqss a.external:hover {
+  color: $tailwind-blue-400;
+  border-color: $tailwind-blue-400;
+}
+
+.LikeButton,
+.VoteButton {
+  background-color: $highlight-0-1;
+  color: $highlight;
+  border-color: transparent;
+  &:not(:disabled):hover {
+    background-color: $highlight-0-2;
+  }
+
+  &.is-active {
+    background-color: $highlight;
+    color: $tailwind-gray-50;
+
+    &:hover {
+      background-color: $highlight;
+    }
+  }
+}
+
+/*回答卡片底部信息*/
+.ContentItem-action:not(:first-child) {
+  color: $tailwind-gray-400;
+}
+
+/*回答内其他回答链接*/
+.css-1g0fqss .LinkCard.new {
+  background-color: $tailwind-gray-900;
+
+  .LinkCard-title {
+    color: $tailwind-gray-50;
+  }
+}
+
+/*搜索信息标题*/
+.Highlight em {
+  color: #f43f5e;
+}
+
+/*搜索信息标题*/
+.ContentItem-title a:hover {
+  color: $tailwind-blue-400;
+}
+
+/*搜索页侧边乱七八糟信息*/
+.css-knqde {
+  display: none;
+}
+
+/*相关搜索*/
+.RelevantQuery h2 {
+  color: $tailwind-gray-50;
+}
+
+.RelevantQuery li {
+  color: $tailwind-blue-400;
+}
+
+/*搜索回答内引用*/
+.css-1g0fqss blockquote {
+  color: $tailwind-gray-300;
+}
+
+.SearchTopicHeader-Introduction,
+.SearchTopicHeader-Introduction p {
+  color: $tailwind-gray-50;
+}
+
+/*搜索页话题链接*/
+.SearchTopicHeaderLink {
+  color: $tailwind-blue-400;
+}
+
+/*搜索页话题信息更多按钮*/
+.SearchTopicHeader-IntroTail {
+  background: none;
+  color: $highlight;
+}
+
+.SearchTopicHeader-IntroTail:before {
+  display: none;
+}
+
+/*搜索结果页*/
+.SearchResult-Card .SearchItem-type {
+  background: $tailwind-gray-600;
+  color: $tailwind-gray-300;
+}
+
+/*搜索相关电子书*/
+.KfeCollection-PcCollegeCard-wrapper {
+  background-color: $tailwind-gray-800;
+
+  .KfeCollection-PcCollegeCard-root {
+    background-color: $tailwind-gray-800;
+
+    .KfeCollection-PcCollegeCard em {
+      color: #f43f5e;
+    }
+
+    span.KfeCollection-PcCollegeCard-type {
+      background-color: $tailwind-gray-700;
+      color: $tailwind-gray-300;
+    }
+
+    .KfeCollection-PcCollegeCard-meta {
+      .KfeCollection-PcCollegeCard-description,
+      .KfeCollection-PcCollegeCard-moreDescription {
+        color: $tailwind-gray-100;
+      }
+    }
+
+    .KfeCollection-PcCollegeCard-searchMore {
+      color: $highlight;
+    }
+  }
+}

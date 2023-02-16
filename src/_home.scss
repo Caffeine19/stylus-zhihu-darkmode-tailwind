@@ -1,0 +1,46 @@
+/*首页细分导航栏*/
+.Topstory-tabs {
+  background-color: $tailwind-gray-800;
+  color: $tailwind-gray-50;
+  border-color: $tailwind-gray-900;
+}
+
+.TopstoryTabs-link {
+  color: $tailwind-gray-50;
+
+  &:hover {
+    color: $highlight;
+  }
+
+  &.is-active {
+    color: $highlight;
+  }
+}
+
+/*首页向下滚动出现的header*/
+.TopstoryPageHeader {
+  .TopstoryPageHeader-main {
+    /*知乎图标*/
+    .css-nxq4uo {
+      a svg {
+        fill: $tailwind-blue-400;
+      }
+    }
+  }
+
+  .TopstoryPageHeader-aside {
+    & > .Button {
+      background-color: $tailwind-blue-400;
+      color: $tailwind-gray-50;
+    }
+
+    .QZcfWkCJoarhIYxlM_sG.is-focus {
+      background: $tailwind-gray-600;
+      border-color: $tailwind-gray-600;
+    }
+
+    input {
+      color: $tailwind-gray-50;
+    }
+  }
+}

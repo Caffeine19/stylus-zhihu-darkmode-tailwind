@@ -1,0 +1,67 @@
+/*用户评论区*/
+.Comments-container {
+  &.css-plbgu {
+    .css-x0pxoz {
+      border-color: $tailwind-gray-600;
+
+      .css-ip4bff .Dropzone {
+        color: $tailwind-gray-50;
+      }
+
+      .css-ip4bff .public-DraftEditorPlaceholder-root {
+        color: $tailwind-gray-300;
+      }
+    }
+
+    .css-z07uxh {
+      border-color: $tailwind-gray-600;
+
+      .css-vpssrj {
+        color: $tailwind-gray-100;
+      }
+
+      /*评论排序 默认与最新按钮*/
+      .css-1hnxfhy {
+        background-color: $tailwind-gray-900;
+        border-color: $tailwind-gray-900;
+        color: $tailwind-gray-50;
+
+        .css-gjiv4z {
+          background-color: $tailwind-gray-800;
+          border-color: $tailwind-gray-900;
+          color: $tailwind-gray-50;
+        }
+
+        .css-1v9si9f {
+          color: $tailwind-gray-200;
+        }
+      }
+    }
+  }
+
+  .css-1ygdre8 {
+    color: $tailwind-gray-50;
+  }
+
+  .css-1rd0h6f {
+    color: $tailwind-gray-300;
+  }
+
+  .css-we6n55::before {
+    border-color: $tailwind-gray-600;
+  }
+  /*底部添加用户评论块*/
+  .css-805ti0 {
+    background: $tailwind-gray-800;
+    box-shadow: rgba($tailwind-gray-900, 0.6) 0px -2px 6px !important;
+  }
+
+  .css-1yeqy9h::before {
+    border-color: $tailwind-gray-600;
+  }
+
+  button.css-1evwjhc {
+    background: $tailwind-gray-900;
+    color: $tailwind-gray-400;
+  }
+}

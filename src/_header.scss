@@ -1,0 +1,127 @@
+/*顶部的Header*/
+.AppHeader {
+  background-color: $tailwind-gray-800;
+  border-bottom: 1px solid;
+  border-color: $tailwind-gray-700;
+  box-shadow: 0 100px 80px #00000012, 0 41.7776px 33.4221px #0000000d,
+    0 22.3363px 17.869px #0000000b, 0 12.5216px 10.0172px #00000009,
+    0 6.6501px 5.32008px #00000007, 0 2.76726px 2.21381px #00000005;
+}
+
+/*顶部Header知乎图标*/
+.AppHeader-inner a svg {
+  fill: $tailwind-blue-400;
+}
+
+/*header内部的文字链接*/
+.AppHeader-TabsLink {
+  color: $tailwind-gray-400;
+}
+
+/*header内部的文字链接高亮*/
+.css-l2ygoj .AppHeader-TabsLink {
+  &.is-active,
+  &:hover {
+    color: $tailwind-gray-50;
+  }
+
+  &.is-active::after {
+    background-color: $tailwind-blue-400 !important;
+  }
+}
+
+/*顶部搜索框*/
+.Input-wrapper.Input-wrapper--grey {
+  background: $tailwind-gray-900;
+  border-color: $tailwind-gray-900;
+
+  input.Input {
+    color: $tailwind-gray-50;
+  }
+}
+
+/*搜索框按钮和提问按钮*/
+.css-10fy1q8 {
+  .SearchBar-searchButton {
+    background-color: $highlight-0-8;
+
+    &:hover {
+      background-color: $highlight;
+    }
+
+    &.hasValue {
+      color: $tailwind-gray-50;
+    }
+
+    & svg {
+      fill: $tailwind-gray-50;
+    }
+  }
+
+  .SearchBar-askButton {
+    background-color: $highlight-0-8;
+    color: $tailwind-gray-50;
+
+    &:hover {
+      background-color: $highlight;
+    }
+  }
+}
+
+.AppHeader-userInfo {
+  svg {
+    fill: $tailwind-gray-200;
+  }
+
+  a svg {
+    fill: $tailwind-gray-200;
+  }
+}
+
+/*次级Header*/
+.SearchTabs.SearchTab-bottomShadow {
+  background-color: $tailwind-gray-800;
+  border-bottom: 1px solid;
+  border-color: $tailwind-gray-700;
+  box-shadow: 0 100px 80px #00000012, 0 41.7776px 33.4221px #0000000d,
+    0 22.3363px 17.869px #0000000b, 0 12.5216px 10.0172px #00000009,
+    0 6.6501px 5.32008px #00000007, 0 2.76726px 2.21381px #00000005;
+}
+
+/*次级Header内部的链接颜色*/
+.SearchTabs-actions ul li a {
+  color: $tailwind-gray-100;
+
+  &.is-active:after {
+    background-color: $tailwind-blue-400;
+  }
+}
+
+/*三级搜索Header*/
+.SearchTabs {
+  background: $tailwind-gray-800;
+}
+
+/*三级搜索Header内部文字链接*/
+.List-item {
+  background: $tailwind-gray-800;
+}
+
+/*三级Header搜索框*/
+.SimpleSearchBar-input {
+  background: $tailwind-gray-900;
+  border-color: $tailwind-gray-900;
+
+  &.is-focus {
+    background-color: $tailwind-gray-800;
+    border-color: $tailwind-gray-800;
+  }
+
+  input {
+    color: $tailwind-gray-50;
+  }
+}
+
+.css-1mdzk7e .SimpleSearchBar-solidSearchButton {
+  background-color: $tailwind-blue-400;
+}

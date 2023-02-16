@@ -1,0 +1,92 @@
+/*关注页卡片*/
+.Topstory-mainColumnCard .Card:not(.Topstory-tabCard) {
+  background-color: $tailwind-gray-800;
+  border-color: $tailwind-gray-900;
+  border-width: 2px;
+}
+
+/*关注页卡片底部菜单栏*/
+.ContentItem-actions {
+  background-color: $tailwind-gray-800;
+}
+
+/*关注页卡片标题*/
+.ContentItem-title {
+  color: $tailwind-gray-50;
+}
+
+/*关注页卡片内容*/
+.RichContent.is-collapsed .RichContent-inner {
+  color: $tailwind-gray-100;
+}
+
+/* .RichContent.is-collapsed .RichContent-inner :hover {
+        color: rgba(var(--tailwind-gray-100), 0.8)
+    } */
+/*关注页图片*/
+img.css-1phd9a0 {
+  border-radius: 8px;
+}
+
+/*回答卡片内@他人连接*/
+.css-1g0fqss a.UserLink-link {
+  color: $tailwind-gray-400;
+}
+
+/*他人关注问题卡片内关注问题按钮*/
+.TopstoryItem
+  .ContentItem-actions
+  .Button:not(.Button--plain):not(.Button--link) {
+  color: $tailwind-blue-400;
+  border-color: $tailwind-blue-400;
+  /*回答点赞按钮*/
+  &.LikeButton,
+  &.VoteButton {
+    background-color: $highlight-0-1;
+    color: $highlight;
+    border-color: transparent;
+    &:not(:disabled):hover {
+      background-color: $highlight-0-2;
+    }
+
+    &.is-active {
+      background-color: $highlight;
+      color: $tailwind-gray-50;
+
+      &:hover {
+        background-color: $highlight;
+      }
+    }
+  }
+}
+
+.RichContent-inner {
+  color: $tailwind-gray-100;
+}
+
+@media (min-width: 690px) {
+  .RichContent.is-collapsed .RichContent-inner:hover {
+    color: rgba($tailwind-gray-100, 0.6);
+  }
+}
+
+.css-1oy4rvw .Card {
+  background-color: $tailwind-gray-800;
+}
+
+.CreatorEntrance-Link--smallIcon .CreatorEntrancePage-hint--smallIcon {
+  svg.CreatorEntrance-creatorIcon {
+    fill: $tailwind-gray-200;
+    color: $tailwind-gray-200;
+  }
+
+  .CreatorEntrance-text {
+    .css-zkfaav {
+      color: $tailwind-gray-200;
+    }
+  }
+}
+
+.Footer {
+  display: none;
+}
