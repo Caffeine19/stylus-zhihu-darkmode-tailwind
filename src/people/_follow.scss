@@ -1,0 +1,27 @@
+//关注分类按钮
+.Profile-mainColumn .SubTabs-item .Select-button {
+  padding: 4px;
+  background-color: $tailwind-gray-600;
+  color: $tailwind-gray-200;
+
+  &:hover {
+    background-color: rgba($tailwind-gray-600, 0.6);
+  }
+}
+
+//其他用户信息
+.ContentItem-meta {
+  color: $tailwind-gray-300;
+}
+//关注我的人的标签
+.FollowStatus {
+  background-color: $tailwind-gray-600;
+  color: $tailwind-gray-300;
+}
+.epMJl0lFQuYbC7jrwr_o.JmYzaky7MEPMFcJDLNMG {
+  background-color: $highlight;
+  color: $tailwind-gray-50;
+  &:hover {
+    background-color: $highlight-0-8;
+  }
+}
