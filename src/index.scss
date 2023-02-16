@@ -64,4 +64,16 @@
       fill: $tailwind-gray-50;
     }
   }
+  .Pagination {
+    .PaginationButton {
+      color: $tailwind-gray-400;
+      &:hover {
+        color: $highlight;
+      }
+    }
+    .PaginationButton--current,
+    html[data-theme="dark"] .PaginationButton--current {
+      color: $tailwind-gray-50;
+    }
+  }
 }
