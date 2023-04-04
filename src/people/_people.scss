@@ -70,8 +70,6 @@
       }
     }
   }
-  @import "collection";
-  @import "follow";
 }
 .PageHeader {
   .ProfileMain-header {
@@ -87,3 +85,6 @@
     }
   }
 }
+
+@import "collection";
+@import "follow";

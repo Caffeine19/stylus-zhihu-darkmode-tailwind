@@ -39,3 +39,37 @@
     color: $tailwind-gray-300;
   }
 }
+
+//进入某个收藏夹页面后
+//收藏夹的Header
+.CollectionDetailPageHeader {
+  //收藏夹的标题
+  .CollectionDetailPageHeader-title {
+    color: $tailwind-gray-50;
+  }
+  //收藏夹的创建日期
+  .CollectionDetailPageHeader-hint {
+    color: $tailwind-gray-400;
+  }
+}
+
+//收藏夹内容数量统计
+.Card-headerText {
+  color: $tailwind-gray-50;
+}
+//收藏夹Header
+.Card-header {
+  border-color: $tailwind-gray-700;
+}
+//每个收藏的回答直接的分割线
+.CollectionDetailPageItem-innerContainer {
+  border-color: $tailwind-gray-700;
+}
+
+//右边的用户收藏夹列表
+.SideBarCollectionItem {
+  //收藏夹名称
+  .SideBarCollectionItem-title {
+    color: $tailwind-blue-400;
+  }
+}
