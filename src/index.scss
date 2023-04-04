@@ -32,6 +32,10 @@
     background-color: $tailwind-gray-900;
   }
 
+  img {
+    background-color: $tailwind-gray-900 !important;
+  }
+
   .App-main {
     background: $tailwind-gray-900;
   }
