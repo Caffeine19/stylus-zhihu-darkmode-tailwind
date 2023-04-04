@@ -73,3 +73,17 @@
   @import "collection";
   @import "follow";
 }
+.PageHeader {
+  .ProfileMain-header {
+    .ProfileMain-tabs {
+      .Tabs-item {
+        .Tabs-link {
+          color: $tailwind-gray-50;
+          &.is-active:after {
+            background-color: $highlight;
+          }
+        }
+      }
+    }
+  }
+}
