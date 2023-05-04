@@ -1,0 +1,1 @@
+sass -w src/index.scss dist/index.css
