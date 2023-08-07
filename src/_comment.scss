@@ -1,5 +1,9 @@
 /*用户评论区*/
 .Comments-container {
+  .CommentContent.css-1t9bp9f {
+    color: $tailwind-gray-200
+  }
+
   &.css-plbgu {
     .css-x0pxoz {
       border-color: $tailwind-gray-600;
@@ -50,6 +54,7 @@
   .css-we6n55::before {
     border-color: $tailwind-gray-600;
   }
+
   /*底部添加用户评论块*/
   .css-805ti0 {
     background: $tailwind-gray-800;
