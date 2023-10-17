@@ -1,58 +1,38 @@
 /*用户评论区*/
 .Comments-container {
   .CommentContent.css-1t9bp9f {
-    color: $tailwind-gray-200
+    color: $tailwind-gray-200;
   }
 
-  &.css-plbgu {
-    .css-x0pxoz {
-      border-color: $tailwind-gray-600;
-
-      .css-ip4bff .Dropzone {
-        color: $tailwind-gray-50;
-      }
-
-      .css-ip4bff .public-DraftEditorPlaceholder-root {
-        color: $tailwind-gray-300;
-      }
-    }
-
-    .css-z07uxh {
-      border-color: $tailwind-gray-600;
-
-      .css-vpssrj {
-        color: $tailwind-gray-100;
-      }
-
-      /*评论排序 默认与最新按钮*/
-      .css-1hnxfhy {
-        background-color: $tailwind-gray-900;
-        border-color: $tailwind-gray-900;
-        color: $tailwind-gray-50;
-
-        .css-gjiv4z {
-          background-color: $tailwind-gray-800;
-          border-color: $tailwind-gray-900;
-          color: $tailwind-gray-50;
-        }
-
-        .css-1v9si9f {
-          color: $tailwind-gray-200;
-        }
-      }
-    }
-  }
-
-  .css-1ygdre8 {
+  //评论内容
+  .css-1p9g937 {
     color: $tailwind-gray-50;
   }
 
-  .css-1rd0h6f {
+  //添加评论的用户的昵称
+  .css-g9ynb2 {
     color: $tailwind-gray-300;
   }
 
-  .css-we6n55::before {
+  //评论区容器外边框
+  .css-1ki0pxd {
     border-color: $tailwind-gray-600;
+  }
+  .css-2ovwuy::before {
+    border-color: $tailwind-gray-600;
+  }
+
+  //登录用户添加评论边框
+  .css-iin461 {
+    border-color: $tailwind-gray-600;
+  }
+  //评论框内placeholder
+  .css-ip4bff .public-DraftEditorPlaceholder-root {
+    color: $tailwind-gray-200;
+  }
+  //评论数量统计
+  .css-1k10w8f {
+    color: $tailwind-gray-50;
   }
 
   /*底部添加用户评论块*/
